@@ -31,7 +31,7 @@ class PersonParser{
         // })
         var request = require('request');
 
-        var dataString = `uangTeman,uniq=$i,errorcode="${line[2]}",errorcode_malena="${line[3]}",errorcode_partner="${line[4]}",sms="${line[5]}" result="${line[6]}",subs=${line[7]},count=${line[8]} ${curDate}`;
+        var dataString = `uangTeman,errorcode="${pisah[2]}",errorcode_malena="${pisah[3]}",errorcode_partner="${pisah[4]}",sms="${pisah[5]}" result="${pisah[6]}",subs=${pisah[7]},count=${pisah[8]},date=0902${pisah[0]}${pisah[1]}`;
 
         var options = {
             url: 'http://localhost:8086/write?db=diis',
